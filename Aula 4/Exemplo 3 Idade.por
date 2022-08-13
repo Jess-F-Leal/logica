@@ -6,7 +6,7 @@ programa
 		inteiro idade[3], maiorIdade = 0, menorIdade = 0
 
 		para(inteiro i=0; i <=2; i++){
-			escreva("Digite a idade")
+			escreva("Digite a idade: ")
 			leia(idade[i])
 			}
 
@@ -28,8 +28,8 @@ programa
 					} 
 
 		}
-		escreva("Maior Idade", maiorIdade,"\n")
-		escreva("Menor Idade", menorIdade,"\n")
+		escreva("Maior Idade: ", maiorIdade,"\n")
+		escreva("Menor Idade: ", menorIdade,"\n")
 		
 }
 
@@ -39,7 +39,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 550; 
+ * @POSICAO-CURSOR = 532; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
