@@ -4,7 +4,7 @@ programa
 	funcao inicio()
 	{
 		inteiro lugar[11][13], local[11][13]
-		inteiro livre, ocupado, x = 0, y = 0
+		inteiro x = 0, y = 0
 
 		escreva("Assentos disponiveis: \n\n")
 
@@ -29,11 +29,11 @@ programa
 			escreva("Digite uma coluna: ","\n")
 			leia(y)
 
-			se(x>=0 e y>=0)
+			se(x > 0 e y > 0)
 			{
 				local[x][y] = 1
 				se(local[x][y] == lugar[x][y])
-                 	escreva("\nDesculpe, assento ocupado ou inválido! Escolha um novo assento!\nAssentos restantes: \n\n")
+                 	escreva("\nDesculpe, assento ocupado! Escolha um novo assento!\nAssentos restantes: \n\n")
 
                  	senao
                  	escreva("\nAssento reservado com sucesso!\n\nAssentos restantes: \n\n")
@@ -49,6 +49,17 @@ programa
 			}
 			
 		    }
+		senao se(x == 0 ou y == 0)
+		{
+			escreva("Assento inválido! Escolha um novo assento!\nAssentos restantes: \n\n")
+			para(inteiro f=1; f < 11; f++)
+			{
+				para(inteiro a=1; a < 13; a++)
+				escreva(lugar[f][a]," ")
+				escreva("\n")
+			}
+		}
+		
 		senao
               escreva("Encerrando o programa de reserva. Obrigado!")
 	   }
@@ -64,7 +75,7 @@ programa
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 752; 
+ * @POSICAO-CURSOR = 673; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
