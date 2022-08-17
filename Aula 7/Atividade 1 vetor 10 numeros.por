@@ -1,33 +1,27 @@
 programa
-{
+{// Escreva um programa que leia 10 números inteiros do teclado e armazena no vetor. 
+//Após isso, imprima os 10 inteiros em ordem inversa ao que foi digitado.
 	
 	funcao inicio()
 	{
-		cadeia matriz[2][2]
+		inteiro numeros[10]
 
-		para(inteiro l=0; l <= 1; l++){
-			para(inteiro c=0; c <= 1; c++){
-				escreva("Digite o nome: ")
-				leia(matriz[l][c])
+		para(inteiro i=0; i < 10; i++){
+			escreva("Digite um número: ")
+			leia(numeros[i])
+		}
+		para(inteiro i=9; i >= 0; i--){
+			escreva(numeros[i],"\t")
 
 		}
-		
-		}
-		para(inteiro l=0; l <= 1; l++){
-			para(inteiro c=0; c <= 1; c++){
-				escreva(matriz[l][c]," ")
-		
-	    }
-	    escreva("\n")
-      }
-   }
+	}
 }
 /* $$$ Portugol Studio $$$ 
  * 
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 305; 
+ * @POSICAO-CURSOR = 376; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;

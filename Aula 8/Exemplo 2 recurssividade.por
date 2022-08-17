@@ -2,32 +2,29 @@ programa
 {
 	
 	funcao inicio()
-	{
-		cadeia matriz[2][2]
+	{/*
+		para(inteiro i=20; i > 0; i++){
+			escreva(i,",")
+		}*/
 
-		para(inteiro l=0; l <= 1; l++){
-			para(inteiro c=0; c <= 1; c++){
-				escreva("Digite o nome: ")
-				leia(matriz[l][c])
+		imprimirNumeros(20)
+	}
 
+	funcao imprimirNumeros(inteiro n){
+		se(n == 0){
+			escreva(n)
+		}senao{
+			escreva(n,",")
+			imprimirNumeros(n-1)
 		}
-		
-		}
-		para(inteiro l=0; l <= 1; l++){
-			para(inteiro c=0; c <= 1; c++){
-				escreva(matriz[l][c]," ")
-		
-	    }
-	    escreva("\n")
-      }
-   }
+	}
 }
 /* $$$ Portugol Studio $$$ 
  * 
  * Esta seção do arquivo guarda informações do Portugol Studio.
  * Você pode apagá-la se estiver utilizando outro editor.
  * 
- * @POSICAO-CURSOR = 305; 
+ * @POSICAO-CURSOR = 135; 
  * @PONTOS-DE-PARADA = ;
  * @SIMBOLOS-INSPECIONADOS = ;
  * @FILTRO-ARVORE-TIPOS-DE-DADO = inteiro, real, logico, cadeia, caracter, vazio;
